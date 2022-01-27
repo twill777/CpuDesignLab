@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (symbol
-	(rect 616 320 776 432)
+	(rect 712 328 872 440)
 	(text "register" (rect 5 0 41 12)(font "Arial" ))
 	(text "inst" (rect 8 96 25 108)(font "Arial" ))
 	(port
