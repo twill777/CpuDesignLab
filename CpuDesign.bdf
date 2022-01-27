@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "D[7..0]" (rect 0 0 34 12)(font "Arial" ))
-		(text "D[7..0]" (rect 21 27 55 39)(font "Arial" ))
+		(text "D[31..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "D[31..0]" (rect 21 27 61 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -54,8 +54,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 32)
 		(output)
-		(text "Q[7..0]" (rect 0 0 34 12)(font "Arial" ))
-		(text "Q[7..0]" (rect 111 27 145 39)(font "Arial" ))
+		(text "Q[31..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "Q[31..0]" (rect 106 27 146 39)(font "Arial" ))
 		(line (pt 160 32)(pt 144 32)(line_width 3))
 	)
 	(drawing
