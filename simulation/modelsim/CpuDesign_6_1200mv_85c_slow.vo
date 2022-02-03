@@ -1,0 +1,500 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+
+// DATE "02/03/2022 14:51:48"
+
+// 
+// Device: Altera EP3C16F484C6 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module CpuDesign (
+	\BusMuxIn-R1 ,
+	Clear,
+	Clock,
+	R1in,
+	BusMuxOut);
+output 	\BusMuxIn-R1 ;
+input 	Clear;
+input 	Clock;
+input 	R1in;
+input 	[31:0] BusMuxOut;
+
+// Design Ports Information
+// BusMuxIn-R1	=>  Location: PIN_T10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Clear	=>  Location: PIN_AA12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Clock	=>  Location: PIN_AB12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// R1in	=>  Location: PIN_AA13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[31]	=>  Location: PIN_AB13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[30]	=>  Location: PIN_R18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[29]	=>  Location: PIN_AA16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[28]	=>  Location: PIN_P2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[27]	=>  Location: PIN_W13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[26]	=>  Location: PIN_G8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[25]	=>  Location: PIN_AA15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[24]	=>  Location: PIN_R17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[23]	=>  Location: PIN_AB7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[22]	=>  Location: PIN_U8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[21]	=>  Location: PIN_M2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[20]	=>  Location: PIN_Y13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[19]	=>  Location: PIN_V6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[18]	=>  Location: PIN_F2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[17]	=>  Location: PIN_R13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[16]	=>  Location: PIN_T12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[15]	=>  Location: PIN_U13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[14]	=>  Location: PIN_M16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[13]	=>  Location: PIN_V15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[12]	=>  Location: PIN_AA21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[11]	=>  Location: PIN_K21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[10]	=>  Location: PIN_T15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[9]	=>  Location: PIN_AB18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[8]	=>  Location: PIN_R11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[7]	=>  Location: PIN_G11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[6]	=>  Location: PIN_U15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[5]	=>  Location: PIN_W17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[4]	=>  Location: PIN_Y17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[3]	=>  Location: PIN_AA22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[2]	=>  Location: PIN_AB20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[1]	=>  Location: PIN_R14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BusMuxOut[0]	=>  Location: PIN_V4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("CpuDesign_6_1200mv_85c_v_slow.sdo");
+// synopsys translate_on
+
+wire \Clear~input_o ;
+wire \Clock~input_o ;
+wire \R1in~input_o ;
+wire \BusMuxOut[31]~input_o ;
+wire \BusMuxOut[30]~input_o ;
+wire \BusMuxOut[29]~input_o ;
+wire \BusMuxOut[28]~input_o ;
+wire \BusMuxOut[27]~input_o ;
+wire \BusMuxOut[26]~input_o ;
+wire \BusMuxOut[25]~input_o ;
+wire \BusMuxOut[24]~input_o ;
+wire \BusMuxOut[23]~input_o ;
+wire \BusMuxOut[22]~input_o ;
+wire \BusMuxOut[21]~input_o ;
+wire \BusMuxOut[20]~input_o ;
+wire \BusMuxOut[19]~input_o ;
+wire \BusMuxOut[18]~input_o ;
+wire \BusMuxOut[17]~input_o ;
+wire \BusMuxOut[16]~input_o ;
+wire \BusMuxOut[15]~input_o ;
+wire \BusMuxOut[14]~input_o ;
+wire \BusMuxOut[13]~input_o ;
+wire \BusMuxOut[12]~input_o ;
+wire \BusMuxOut[11]~input_o ;
+wire \BusMuxOut[10]~input_o ;
+wire \BusMuxOut[9]~input_o ;
+wire \BusMuxOut[8]~input_o ;
+wire \BusMuxOut[7]~input_o ;
+wire \BusMuxOut[6]~input_o ;
+wire \BusMuxOut[5]~input_o ;
+wire \BusMuxOut[4]~input_o ;
+wire \BusMuxOut[3]~input_o ;
+wire \BusMuxOut[2]~input_o ;
+wire \BusMuxOut[1]~input_o ;
+wire \BusMuxOut[0]~input_o ;
+wire \BusMuxIn-R1~output_o ;
+
+
+// Location: IOOBUF_X14_Y0_N9
+cycloneiii_io_obuf \BusMuxIn-R1~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BusMuxIn-R1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BusMuxIn-R1~output .bus_hold = "false";
+defparam \BusMuxIn-R1~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X21_Y0_N8
+cycloneiii_io_ibuf \Clear~input (
+	.i(Clear),
+	.ibar(gnd),
+	.o(\Clear~input_o ));
+// synopsys translate_off
+defparam \Clear~input .bus_hold = "false";
+defparam \Clear~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X21_Y0_N1
+cycloneiii_io_ibuf \Clock~input (
+	.i(Clock),
+	.ibar(gnd),
+	.o(\Clock~input_o ));
+// synopsys translate_off
+defparam \Clock~input .bus_hold = "false";
+defparam \Clock~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X23_Y0_N29
+cycloneiii_io_ibuf \R1in~input (
+	.i(R1in),
+	.ibar(gnd),
+	.o(\R1in~input_o ));
+// synopsys translate_off
+defparam \R1in~input .bus_hold = "false";
+defparam \R1in~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X23_Y0_N22
+cycloneiii_io_ibuf \BusMuxOut[31]~input (
+	.i(BusMuxOut[31]),
+	.ibar(gnd),
+	.o(\BusMuxOut[31]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[31]~input .bus_hold = "false";
+defparam \BusMuxOut[31]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X41_Y9_N22
+cycloneiii_io_ibuf \BusMuxOut[30]~input (
+	.i(BusMuxOut[30]),
+	.ibar(gnd),
+	.o(\BusMuxOut[30]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[30]~input .bus_hold = "false";
+defparam \BusMuxOut[30]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X28_Y0_N22
+cycloneiii_io_ibuf \BusMuxOut[29]~input (
+	.i(BusMuxOut[29]),
+	.ibar(gnd),
+	.o(\BusMuxOut[29]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[29]~input .bus_hold = "false";
+defparam \BusMuxOut[29]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N15
+cycloneiii_io_ibuf \BusMuxOut[28]~input (
+	.i(BusMuxOut[28]),
+	.ibar(gnd),
+	.o(\BusMuxOut[28]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[28]~input .bus_hold = "false";
+defparam \BusMuxOut[28]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X26_Y0_N29
+cycloneiii_io_ibuf \BusMuxOut[27]~input (
+	.i(BusMuxOut[27]),
+	.ibar(gnd),
+	.o(\BusMuxOut[27]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[27]~input .bus_hold = "false";
+defparam \BusMuxOut[27]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X5_Y29_N29
+cycloneiii_io_ibuf \BusMuxOut[26]~input (
+	.i(BusMuxOut[26]),
+	.ibar(gnd),
+	.o(\BusMuxOut[26]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[26]~input .bus_hold = "false";
+defparam \BusMuxOut[26]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X26_Y0_N15
+cycloneiii_io_ibuf \BusMuxOut[25]~input (
+	.i(BusMuxOut[25]),
+	.ibar(gnd),
+	.o(\BusMuxOut[25]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[25]~input .bus_hold = "false";
+defparam \BusMuxOut[25]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X41_Y6_N1
+cycloneiii_io_ibuf \BusMuxOut[24]~input (
+	.i(BusMuxOut[24]),
+	.ibar(gnd),
+	.o(\BusMuxOut[24]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[24]~input .bus_hold = "false";
+defparam \BusMuxOut[24]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X11_Y0_N8
+cycloneiii_io_ibuf \BusMuxOut[23]~input (
+	.i(BusMuxOut[23]),
+	.ibar(gnd),
+	.o(\BusMuxOut[23]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[23]~input .bus_hold = "false";
+defparam \BusMuxOut[23]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X3_Y0_N15
+cycloneiii_io_ibuf \BusMuxOut[22]~input (
+	.i(BusMuxOut[22]),
+	.ibar(gnd),
+	.o(\BusMuxOut[22]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[22]~input .bus_hold = "false";
+defparam \BusMuxOut[22]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y13_N15
+cycloneiii_io_ibuf \BusMuxOut[21]~input (
+	.i(BusMuxOut[21]),
+	.ibar(gnd),
+	.o(\BusMuxOut[21]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[21]~input .bus_hold = "false";
+defparam \BusMuxOut[21]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X26_Y0_N22
+cycloneiii_io_ibuf \BusMuxOut[20]~input (
+	.i(BusMuxOut[20]),
+	.ibar(gnd),
+	.o(\BusMuxOut[20]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[20]~input .bus_hold = "false";
+defparam \BusMuxOut[20]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y0_N1
+cycloneiii_io_ibuf \BusMuxOut[19]~input (
+	.i(BusMuxOut[19]),
+	.ibar(gnd),
+	.o(\BusMuxOut[19]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[19]~input .bus_hold = "false";
+defparam \BusMuxOut[19]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y24_N22
+cycloneiii_io_ibuf \BusMuxOut[18]~input (
+	.i(BusMuxOut[18]),
+	.ibar(gnd),
+	.o(\BusMuxOut[18]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[18]~input .bus_hold = "false";
+defparam \BusMuxOut[18]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X30_Y0_N29
+cycloneiii_io_ibuf \BusMuxOut[17]~input (
+	.i(BusMuxOut[17]),
+	.ibar(gnd),
+	.o(\BusMuxOut[17]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[17]~input .bus_hold = "false";
+defparam \BusMuxOut[17]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X28_Y0_N29
+cycloneiii_io_ibuf \BusMuxOut[16]~input (
+	.i(BusMuxOut[16]),
+	.ibar(gnd),
+	.o(\BusMuxOut[16]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[16]~input .bus_hold = "false";
+defparam \BusMuxOut[16]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X30_Y0_N8
+cycloneiii_io_ibuf \BusMuxOut[15]~input (
+	.i(BusMuxOut[15]),
+	.ibar(gnd),
+	.o(\BusMuxOut[15]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[15]~input .bus_hold = "false";
+defparam \BusMuxOut[15]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X41_Y14_N1
+cycloneiii_io_ibuf \BusMuxOut[14]~input (
+	.i(BusMuxOut[14]),
+	.ibar(gnd),
+	.o(\BusMuxOut[14]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[14]~input .bus_hold = "false";
+defparam \BusMuxOut[14]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X32_Y0_N29
+cycloneiii_io_ibuf \BusMuxOut[13]~input (
+	.i(BusMuxOut[13]),
+	.ibar(gnd),
+	.o(\BusMuxOut[13]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[13]~input .bus_hold = "false";
+defparam \BusMuxOut[13]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X41_Y2_N15
+cycloneiii_io_ibuf \BusMuxOut[12]~input (
+	.i(BusMuxOut[12]),
+	.ibar(gnd),
+	.o(\BusMuxOut[12]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[12]~input .bus_hold = "false";
+defparam \BusMuxOut[12]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X41_Y19_N8
+cycloneiii_io_ibuf \BusMuxOut[11]~input (
+	.i(BusMuxOut[11]),
+	.ibar(gnd),
+	.o(\BusMuxOut[11]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[11]~input .bus_hold = "false";
+defparam \BusMuxOut[11]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X32_Y0_N8
+cycloneiii_io_ibuf \BusMuxOut[10]~input (
+	.i(BusMuxOut[10]),
+	.ibar(gnd),
+	.o(\BusMuxOut[10]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[10]~input .bus_hold = "false";
+defparam \BusMuxOut[10]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X32_Y0_N1
+cycloneiii_io_ibuf \BusMuxOut[9]~input (
+	.i(BusMuxOut[9]),
+	.ibar(gnd),
+	.o(\BusMuxOut[9]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[9]~input .bus_hold = "false";
+defparam \BusMuxOut[9]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X3_Y0_N1
+cycloneiii_io_ibuf \BusMuxOut[8]~input (
+	.i(BusMuxOut[8]),
+	.ibar(gnd),
+	.o(\BusMuxOut[8]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[8]~input .bus_hold = "false";
+defparam \BusMuxOut[8]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X14_Y29_N15
+cycloneiii_io_ibuf \BusMuxOut[7]~input (
+	.i(BusMuxOut[7]),
+	.ibar(gnd),
+	.o(\BusMuxOut[7]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[7]~input .bus_hold = "false";
+defparam \BusMuxOut[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X39_Y0_N29
+cycloneiii_io_ibuf \BusMuxOut[6]~input (
+	.i(BusMuxOut[6]),
+	.ibar(gnd),
+	.o(\BusMuxOut[6]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[6]~input .bus_hold = "false";
+defparam \BusMuxOut[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X35_Y0_N8
+cycloneiii_io_ibuf \BusMuxOut[5]~input (
+	.i(BusMuxOut[5]),
+	.ibar(gnd),
+	.o(\BusMuxOut[5]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[5]~input .bus_hold = "false";
+defparam \BusMuxOut[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X35_Y0_N1
+cycloneiii_io_ibuf \BusMuxOut[4]~input (
+	.i(BusMuxOut[4]),
+	.ibar(gnd),
+	.o(\BusMuxOut[4]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[4]~input .bus_hold = "false";
+defparam \BusMuxOut[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X41_Y2_N22
+cycloneiii_io_ibuf \BusMuxOut[3]~input (
+	.i(BusMuxOut[3]),
+	.ibar(gnd),
+	.o(\BusMuxOut[3]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[3]~input .bus_hold = "false";
+defparam \BusMuxOut[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X37_Y0_N15
+cycloneiii_io_ibuf \BusMuxOut[2]~input (
+	.i(BusMuxOut[2]),
+	.ibar(gnd),
+	.o(\BusMuxOut[2]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[2]~input .bus_hold = "false";
+defparam \BusMuxOut[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X39_Y0_N15
+cycloneiii_io_ibuf \BusMuxOut[1]~input (
+	.i(BusMuxOut[1]),
+	.ibar(gnd),
+	.o(\BusMuxOut[1]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[1]~input .bus_hold = "false";
+defparam \BusMuxOut[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y5_N22
+cycloneiii_io_ibuf \BusMuxOut[0]~input (
+	.i(BusMuxOut[0]),
+	.ibar(gnd),
+	.o(\BusMuxOut[0]~input_o ));
+// synopsys translate_off
+defparam \BusMuxOut[0]~input .bus_hold = "false";
+defparam \BusMuxOut[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign \BusMuxIn-R1  = \BusMuxIn-R1~output_o ;
+
+endmodule
