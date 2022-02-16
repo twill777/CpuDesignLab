@@ -1,0 +1,218 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 280 480)
+	(text "mux32_1" (rect 5 0 41 12)(font "Arial" ))
+	(text "inst" (rect 8 448 20 460)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "BusMuxR0In[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "BusMuxR0In[31..0]" (rect 21 43 97 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "BusMuxR1In[31..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "BusMuxR1In[31..0]" (rect 21 59 96 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "BusMuxR2In[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "BusMuxR2In[31..0]" (rect 21 75 97 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "BusMuxR3In[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "BusMuxR3In[31..0]" (rect 21 91 97 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "BusMuxR4In[31..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "BusMuxR4In[31..0]" (rect 21 107 98 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "BusMuxR5In[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "BusMuxR5In[31..0]" (rect 21 123 97 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "BusMuxR6In[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "BusMuxR6In[31..0]" (rect 21 139 97 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "BusMuxR7In[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "BusMuxR7In[31..0]" (rect 21 155 97 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "BusMuxR8In[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "BusMuxR8In[31..0]" (rect 21 171 97 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "BusMuxR9In[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "BusMuxR9In[31..0]" (rect 21 187 97 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "BusMuxR10In[31..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "BusMuxR10In[31..0]" (rect 21 203 101 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "BusMuxR11In[31..0]" (rect 0 0 79 12)(font "Arial" ))
+		(text "BusMuxR11In[31..0]" (rect 21 219 100 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "BusMuxR12In[31..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "BusMuxR12In[31..0]" (rect 21 235 101 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "BusMuxR13In[31..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "BusMuxR13In[31..0]" (rect 21 251 101 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "BusMuxR14In[31..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "BusMuxR14In[31..0]" (rect 21 267 102 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "BusMuxR15In[31..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "BusMuxR15In[31..0]" (rect 21 283 101 295)(font "Arial" ))
+		(line (pt 0 288)(pt 16 288)(line_width 3))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "BusMuxHIIn[31..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "BusMuxHIIn[31..0]" (rect 21 299 94 311)(font "Arial" ))
+		(line (pt 0 304)(pt 16 304)(line_width 3))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "BusMuxLOIn[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "BusMuxLOIn[31..0]" (rect 21 315 97 327)(font "Arial" ))
+		(line (pt 0 320)(pt 16 320)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "BusMuxZhighIn[31..0]" (rect 0 0 86 12)(font "Arial" ))
+		(text "BusMuxZhighIn[31..0]" (rect 21 331 107 343)(font "Arial" ))
+		(line (pt 0 336)(pt 16 336)(line_width 3))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "BusMuxZlowIn[31..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "BusMuxZlowIn[31..0]" (rect 21 347 103 359)(font "Arial" ))
+		(line (pt 0 352)(pt 16 352)(line_width 3))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "BusMuxPCIn[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "BusMuxPCIn[31..0]" (rect 21 363 97 375)(font "Arial" ))
+		(line (pt 0 368)(pt 16 368)(line_width 3))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "BusMuxMDRIn[31..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "BusMuxMDRIn[31..0]" (rect 21 379 108 391)(font "Arial" ))
+		(line (pt 0 384)(pt 16 384)(line_width 3))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "BusMuxPortIn[31..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "BusMuxPortIn[31..0]" (rect 21 395 101 407)(font "Arial" ))
+		(line (pt 0 400)(pt 16 400)(line_width 3))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "C_sign_extended[31..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "C_sign_extended[31..0]" (rect 21 411 114 423)(font "Arial" ))
+		(line (pt 0 416)(pt 16 416)(line_width 3))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "S[4..0]" (rect 0 0 27 12)(font "Arial" ))
+		(text "S[4..0]" (rect 21 427 48 439)(font "Arial" ))
+		(line (pt 0 432)(pt 16 432)(line_width 3))
+	)
+	(port
+		(pt 264 32)
+		(output)
+		(text "BusMuxOut[31..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "BusMuxOut[31..0]" (rect 173 27 243 39)(font "Arial" ))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 248 448)(line_width 1))
+	)
+)
