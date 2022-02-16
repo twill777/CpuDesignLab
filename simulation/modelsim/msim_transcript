@@ -10,12 +10,6 @@
 # ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year\ 3/ELEC\ 374/CpuDesignLab {C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/register.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module register
-# 
-# Top level modules:
-# 	register
 # vlog -vlog01compat -work work +incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year\ 3/ELEC\ 374/CpuDesignLab {C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module encoder32_5
@@ -55,4 +49,4 @@
 # Error loading design
 # Error: Error loading design 
 #        Pausing macro execution 
-# MACRO ./CpuDesign_run_msim_rtl_verilog.do PAUSED at line 14
+# MACRO ./CpuDesign_run_msim_rtl_verilog.do PAUSED at line 13

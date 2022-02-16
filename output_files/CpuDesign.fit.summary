@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Feb 03 14:51:34 2022
+Fitter Status : Failed - Wed Feb 16 17:19:27 2022
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : CpuDesign
-Top-level Entity Name : CpuDesign
+Top-level Entity Name : Bus
 Family : Cyclone III
 Device : EP3C16F484C6
 Timing Models : Final
-Total logic elements : 0 / 15,408 ( 0 % )
-    Total combinational functions : 0 / 15,408 ( 0 % )
-    Dedicated logic registers : 0 / 15,408 ( 0 % )
-Total registers : 0
-Total pins : 36 / 347 ( 10 % )
+Total logic elements : 543 / 15,408 ( 4 % )
+    Total combinational functions : 543 / 15,408 ( 4 % )
+    Dedicated logic registers : 37 / 15,408 ( < 1 % )
+Total registers : 37
+Total pins : 825 / 347 ( 238 % )
 Total virtual pins : 0
 Total memory bits : 0 / 516,096 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )

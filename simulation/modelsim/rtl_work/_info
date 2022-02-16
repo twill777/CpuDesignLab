@@ -19,7 +19,7 @@ Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everyth
 !i10b 1
 !s100 o]F3UFSJb08Fk0da5D4O93
 !s85 0
-!s108 1645044880.342000
+!s108 1645050084.792000
 !s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v|
 !s101 -O0
@@ -39,29 +39,9 @@ R4
 !i10b 1
 !s100 O84J1^?9=SoTI>9VVNKm_2
 !s85 0
-!s108 1645044880.489000
+!s108 1645050085.079000
 !s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/mux32-1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/mux32-1.v|
-!s101 -O0
-vregister
-IkEZ@d`O;e^nK[ZMYWOHJZ2
-VdEAITNS1L`e6eO3dM7O[o0
-R1
-w1645042564
-8C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/register.v
-FC:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/register.v
-L0 1
-R2
-r1
-31
-R3
-R4
-!i10b 1
-!s100 aOFg80AYWME6zTC7z8_co3
-!s85 0
-!s108 1645044880.178000
-!s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/register.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/register.v|
 !s101 -O0
 vRegisters_tb
 !i10b 1
@@ -77,7 +57,7 @@ R2
 r1
 !s85 0
 31
-!s108 1645044880.618000
+!s108 1645050085.482000
 !s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Registers_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Registers_tb.v|
 !s101 -O0

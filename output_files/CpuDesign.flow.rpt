@@ -1,5 +1,5 @@
 Flow report for CpuDesign
-Wed Feb 16 15:53:39 2022
+Wed Feb 16 17:21:06 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,10 +40,10 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Wed Feb 16 15:53:39 2022      ;
+; Flow Status                        ; Successful - Wed Feb 16 17:21:06 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; CpuDesign                                  ;
-; Top-level Entity Name              ; CpuDesign                                  ;
+; Top-level Entity Name              ; Bus                                        ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C16F484C6                               ;
 ; Timing Models                      ; Final                                      ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/16/2022 15:53:39 ;
+; Start date & time ; 02/16/2022 17:21:05 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CpuDesign           ;
 +-------------------+---------------------+
@@ -75,16 +75,21 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 71052588907072.164504481920316        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 71052588907072.164505006520280        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; Registers_tb   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; Bus_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Registers_tb                          ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_FILE                  ; Registers_tb.v                        ; --            ; --          ; Registers_tb   ;
+; EDA_TEST_BENCH_FILE                  ; Datapath/Bus_tb.v                     ; --            ; --          ; Bus_tb         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; Registers_tb                          ; --            ; --          ; Registers_tb   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Bus_tb                                ; --            ; --          ; Bus_tb         ;
 ; EDA_TEST_BENCH_NAME                  ; Registers_tb                          ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; Bus_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                ; --            ; --          ; Registers_tb   ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                ; --            ; --          ; Bus_tb         ;
 ; EDA_TIME_SCALE                       ; 1 ps                                  ; --            ; --          ; eda_simulation ;
 ; IP_TOOL_NAME                         ; LPM_ADD_SUB                           ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                      ; 13.1                                  ; --            ; --          ; --             ;
@@ -93,12 +98,13 @@ applicable agreement for further details.
 ; MISC_FILE                            ; lpm_add_sub0.bsf                      ; --            ; --          ; --             ;
 ; MISC_FILE                            ; lpm_add_sub0_bb.v                     ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; 16764057                              ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; --          ; Top            ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; Bus         ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; Bus         ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; Bus         ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; Bus                                   ; CpuDesign     ; --          ; --             ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
@@ -107,7 +113,7 @@ applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:01     ; 1.0                     ; 4595 MB             ; 00:00:01                           ;
+; Analysis & Elaboration ; 00:00:01     ; 1.0                     ; 4594 MB             ; 00:00:01                           ;
 ; Total                  ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
