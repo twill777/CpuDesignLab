@@ -1,0 +1,58 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do CpuDesign_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year\ 3/ELEC\ 374/CpuDesignLab {C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/register.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# vlog -vlog01compat -work work +incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year\ 3/ELEC\ 374/CpuDesignLab {C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module encoder32_5
+# 
+# Top level modules:
+# 	encoder32_5
+# vlog -vlog01compat -work work +incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year\ 3/ELEC\ 374/CpuDesignLab {C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/mux32-1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux32_1
+# 
+# Top level modules:
+# 	mux32_1
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year\ 3/ELEC\ 374/CpuDesignLab {C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Registers_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Registers_tb
+# 
+# Top level modules:
+# 	Registers_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  Registers_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Registers_tb 
+# Loading work.Registers_tb
+# ** Error: (vsim-3033) C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Registers_tb.v(36): Instantiation of 'Registers' failed. The design unit was not found.
+# 
+#         Region: /Registers_tb
+#         Searched libraries:
+#             C:/altera/13.1/modelsim_ase/altera/verilog/altera
+#             C:/altera/13.1/modelsim_ase/altera/verilog/220model
+#             C:/altera/13.1/modelsim_ase/altera/verilog/sgate
+#             C:/altera/13.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/altera/13.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/altera/13.1/modelsim_ase/altera/verilog/cycloneiii
+#             C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/simulation/modelsim/rtl_work
+#             C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/simulation/modelsim/rtl_work
+#             C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./CpuDesign_run_msim_rtl_verilog.do PAUSED at line 14

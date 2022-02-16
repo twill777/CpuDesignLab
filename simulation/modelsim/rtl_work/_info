@@ -1,0 +1,86 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\tbone_v3sh3ej\Desktop\Everything\School\Queens\Year 3\ELEC 374\CpuDesignLab\simulation\modelsim
+vencoder32_5
+II;Mo:RXkYhYe?F8Cg20n53
+VdBXaHD=eNnUkeI5VWD9^;3
+Z1 dC:\Users\tbone_v3sh3ej\Desktop\Everything\School\Queens\Year 3\ELEC 374\CpuDesignLab\simulation\modelsim
+w1643921316
+8C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v
+FC:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab} -O0
+!i10b 1
+!s100 o]F3UFSJb08Fk0da5D4O93
+!s85 0
+!s108 1645044880.342000
+!s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v|
+!s101 -O0
+vmux32_1
+IJQVm`Ng1Dz]F0Io[d96;63
+VFKA73JS413<k1EbL9MkIk3
+R1
+w1643922131
+8C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/mux32-1.v
+FC:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/mux32-1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 O84J1^?9=SoTI>9VVNKm_2
+!s85 0
+!s108 1645044880.489000
+!s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/mux32-1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/mux32-1.v|
+!s101 -O0
+vregister
+IkEZ@d`O;e^nK[ZMYWOHJZ2
+VdEAITNS1L`e6eO3dM7O[o0
+R1
+w1645042564
+8C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/register.v
+FC:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/register.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 aOFg80AYWME6zTC7z8_co3
+!s85 0
+!s108 1645044880.178000
+!s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/register.v|
+!s101 -O0
+vRegisters_tb
+!i10b 1
+!s100 Bn7^AzAS9^E0WbmBGgn0^3
+IZ7^:XZ0:]o@nGW^;gm`X>1
+V;z<aOXC;9SX^JfzDPi4ML0
+R1
+w1645044790
+8C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Registers_tb.v
+FC:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Registers_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1645044880.618000
+!s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Registers_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Registers_tb.v|
+!s101 -O0
+R3
+R4
+n@registers_tb

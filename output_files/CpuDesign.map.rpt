@@ -1,5 +1,5 @@
-Analysis & Synthesis report for CpuDesign
-Thu Feb 03 14:51:09 2022
+Analysis & Elaboration report for CpuDesign
+Wed Feb 16 15:53:39 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -7,15 +7,10 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
@@ -39,27 +34,38 @@ applicable agreement for further details.
 
 
 +---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
+; Analysis & Elaboration Summary                                                  ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 03 14:51:08 2022      ;
+; Analysis & Elaboration Status      ; Successful - Wed Feb 16 15:53:39 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; CpuDesign                                  ;
 ; Top-level Entity Name              ; CpuDesign                                  ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 0                                          ;
-;     Total combinational functions  ; 0                                          ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 36                                         ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
 +------------------------------------+--------------------------------------------+
 
 
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
+; Analysis & Elaboration Settings                                                                                      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
@@ -145,98 +151,14 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; CpuDesign.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/CpuDesign.bdf ;         ;
-; register.v                       ; yes             ; User Verilog HDL File              ; C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/register.v    ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
-
-
-+------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                      ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-;                                             ;                    ;
-; Total combinational functions               ; 0                  ;
-; Logic element usage by number of LUT inputs ;                    ;
-;     -- 4 input functions                    ; 0                  ;
-;     -- 3 input functions                    ; 0                  ;
-;     -- <=2 input functions                  ; 0                  ;
-;                                             ;                    ;
-; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 0                  ;
-;     -- arithmetic mode                      ; 0                  ;
-;                                             ;                    ;
-; Total registers                             ; 0                  ;
-;     -- Dedicated logic registers            ; 0                  ;
-;     -- I/O registers                        ; 0                  ;
-;                                             ;                    ;
-; I/O pins                                    ; 36                 ;
-; Embedded Multiplier 9-bit elements          ; 0                  ;
-; Maximum fan-out node                        ; BusMuxIn-R1~output ;
-; Maximum fan-out                             ; 1                  ;
-; Total fan-out                               ; 36                 ;
-; Average fan-out                             ; 0.50               ;
-+---------------------------------------------+--------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |CpuDesign                 ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |CpuDesign          ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Feb 03 14:51:01 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CpuDesignLab -c CpuDesign
+    Info: Processing started: Wed Feb 16 15:53:38 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CpuDesignLab -c CpuDesign --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file cpudesign.bdf
     Info (12023): Found entity 1: CpuDesign
@@ -244,56 +166,28 @@ Info (12021): Found 1 design units, including 1 entities, in source file lpm_add
     Info (12023): Found entity 1: lpm_add_sub0
 Info (12021): Found 1 design units, including 1 entities, in source file register.v
     Info (12023): Found entity 1: register
+Info (12021): Found 1 design units, including 1 entities, in source file encoder32-5.v
+    Info (12023): Found entity 1: encoder32_5
+Info (12021): Found 1 design units, including 1 entities, in source file bus.bdf
+    Info (12023): Found entity 1: Bus
+Info (12021): Found 1 design units, including 1 entities, in source file mux32-1.v
+    Info (12023): Found entity 1: mux32_1
+Info (12021): Found 1 design units, including 1 entities, in source file registers.bdf
+    Info (12023): Found entity 1: Registers
+Info (12021): Found 1 design units, including 1 entities, in source file registers_tb.v
+    Info (12023): Found entity 1: Registers_tb
 Info (12127): Elaborating entity "CpuDesign" for the top level hierarchy
-Warning (275043): Pin "BusMuxIn-R1" is missing source
-Info (12128): Elaborating entity "register" for hierarchy "register:inst"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "BusMuxIn-R1" is stuck at GND
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 35 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Clear"
-    Warning (15610): No output dependent on input pin "Clock"
-    Warning (15610): No output dependent on input pin "R1in"
-    Warning (15610): No output dependent on input pin "BusMuxOut[31]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[30]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[29]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[28]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[27]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[26]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[25]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[24]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[23]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[22]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[21]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[20]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[19]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[18]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[17]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[16]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[15]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[14]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[13]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[12]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[11]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[10]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[9]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[8]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[7]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[6]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[5]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[4]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[3]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[2]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[1]"
-    Warning (15610): No output dependent on input pin "BusMuxOut[0]"
-Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 35 input pins
-    Info (21059): Implemented 1 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 40 warnings
-    Info: Peak virtual memory: 4616 megabytes
-    Info: Processing ended: Thu Feb 03 14:51:09 2022
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:02
+Info (12128): Elaborating entity "Bus" for hierarchy "Bus:inst"
+Warning (275009): Pin "R10out" not connected
+Warning (275009): Pin "BusMuxR14In" not connected
+Info (12128): Elaborating entity "mux32_1" for hierarchy "Bus:inst|mux32_1:inst1"
+Info (12128): Elaborating entity "encoder32_5" for hierarchy "Bus:inst|encoder32_5:inst"
+Info (12128): Elaborating entity "Registers" for hierarchy "Registers:inst4"
+Info (12128): Elaborating entity "register" for hierarchy "Registers:inst4|register:Register_0"
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4595 megabytes
+    Info: Processing ended: Wed Feb 16 15:53:39 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
