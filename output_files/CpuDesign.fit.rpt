@@ -1,5 +1,5 @@
 Fitter report for CpuDesign
-Thu Feb 17 15:40:51 2022
+Thu Feb 17 17:02:52 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -55,7 +55,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Failed - Thu Feb 17 15:40:51 2022          ;
+; Fitter Status                      ; Failed - Thu Feb 17 17:02:52 2022          ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; CpuDesign                                  ;
 ; Top-level Entity Name              ; Bus                                        ;
@@ -6858,12 +6858,12 @@ Critical Warning (169085): No exact pin location assignment(s) for 825 pins of 8
     Info (169086): Pin HIout not assigned to an exact location on the device
     Info (169086): Pin LOout not assigned to an exact location on the device
 Error (169281): There are 793 IO input pads in the design, but only 347 IO input pad locations available on the device.
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Error (171000): Can't fit design in device
 Error: Quartus II 64-Bit Fitter was unsuccessful. 2 errors, 4 warnings
     Error: Peak virtual memory: 4778 megabytes
-    Error: Processing ended: Thu Feb 17 15:40:51 2022
-    Error: Elapsed time: 00:00:03
+    Error: Processing ended: Thu Feb 17 17:02:52 2022
+    Error: Elapsed time: 00:00:04
     Error: Total CPU time (on all processors): 00:00:03
 
 
