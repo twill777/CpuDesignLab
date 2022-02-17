@@ -3,7 +3,7 @@ input[63:0] D;
 input clr;
 input clk;
 input enable;
-input hi;
+input Zout;
 output reg[31:0] Q;
 always @(posedge clk)
 begin

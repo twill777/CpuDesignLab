@@ -9,7 +9,7 @@ module Bus_tb;
     reg  R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, 
 	 R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out;
 	 
-	 reg  HIout, LOout, Zhighout, Zlowout, MuxPCout, MDRout, Portout, Cout, clk;
+	 reg  HIout, LOout, Zhighout, Zlowout, PCout, MDRout, Portout, Cout, clk;
 	  
 	 parameter Default = 4'b0000, Reg_load1a = 4'b0001, Reg_load1b = 4'b0010;
 	  
@@ -49,7 +49,7 @@ Default: begin
 	 BusMuxPCIn <= 32'h00000000; BusMuxMDRIn <= 32'h00000000; BusMuxPortIn <= 32'h00000000; C_sign_extended <= 32'h00000000;
 	 R0out <= 0; R1out <= 0; R2out <= 0; R3out <= 0; R4out <= 0; R5out <= 0; R6out <= 0; R7out <= 0; R8out <= 0; R9out <= 0;
 	 R10out <= 0; R11out <= 0; R12out <= 0; R13out <= 0; R14out <= 0; R15out <= 0; R14out <= 0; R15out <= 0; HIout <= 0;
-	 LOout <= 0; Zhighout <= 0; Zlowout <= 0; MuxPCout <= 0; MDRout <= 0; Portout <= 0; Cout <= 0;
+	 LOout <= 0; Zhighout <= 0; Zlowout <= 0; PCout <= 0; MDRout <= 0; Portout <= 0; Cout <= 0;
 end 
 Reg_load1a: begin   
       R1out <= 1; 
