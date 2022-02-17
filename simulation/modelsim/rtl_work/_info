@@ -3,23 +3,65 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\tbone_v3sh3ej\Desktop\Everything\School\Queens\Year 3\ELEC 374\CpuDesignLab\simulation\modelsim
-vencoder32_5
-II;Mo:RXkYhYe?F8Cg20n53
-VdBXaHD=eNnUkeI5VWD9^;3
+vBus
+IdkY:A7LWJ2XZM1=`[:9>V2
+VCoz@MUim024oiSA=X]4gj0
 Z1 dC:\Users\tbone_v3sh3ej\Desktop\Everything\School\Queens\Year 3\ELEC 374\CpuDesignLab\simulation\modelsim
-w1643921316
-8C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v
-FC:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v
-L0 1
+w1645130422
+8C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Bus.v
+FC:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Bus.v
+L0 19
 Z2 OV;L;10.1d;51
 r1
 31
 Z3 o-vlog01compat -work work -O0
+n@bus
 Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab} -O0
+!i10b 1
+!s100 QHK7gQ4?DkQm;Q^^G=M:>1
+!s85 0
+!s108 1645130756.515000
+!s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Bus.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Bus.v|
+!s101 -O0
+vBus_tb
+!i10b 1
+!s100 0QHSSj@d2<4EieL7Nn7m03
+I``QFn@HJJ?fSMfQE0PGQW2
+VihQCEk0]3clJYhOSXHc]:3
+R1
+w1645130693
+8C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Datapath/Bus_tb.v
+FC:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Datapath/Bus_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1645130756.959000
+!s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Datapath/Bus_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Datapath|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Datapath/Bus_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work {+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Datapath} -O0
+n@bus_tb
+vencoder32_5
+II;Mo:RXkYhYe?F8Cg20n53
+VdBXaHD=eNnUkeI5VWD9^;3
+R1
+w1643921316
+8C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v
+FC:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v
+L0 1
+R2
+r1
+31
+R3
+R4
 !i10b 1
 !s100 o]F3UFSJb08Fk0da5D4O93
 !s85 0
-!s108 1645050084.792000
+!s108 1645130756.667000
 !s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/encoder32-5.v|
 !s101 -O0
@@ -39,28 +81,7 @@ R4
 !i10b 1
 !s100 O84J1^?9=SoTI>9VVNKm_2
 !s85 0
-!s108 1645050085.079000
+!s108 1645130756.818000
 !s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/mux32-1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/mux32-1.v|
 !s101 -O0
-vRegisters_tb
-!i10b 1
-!s100 Bn7^AzAS9^E0WbmBGgn0^3
-IZ7^:XZ0:]o@nGW^;gm`X>1
-V;z<aOXC;9SX^JfzDPi4ML0
-R1
-w1645044790
-8C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Registers_tb.v
-FC:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Registers_tb.v
-L0 3
-R2
-r1
-!s85 0
-31
-!s108 1645050085.482000
-!s107 C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Registers_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab|C:/Users/tbone_v3sh3ej/Desktop/Everything/School/Queens/Year 3/ELEC 374/CpuDesignLab/Registers_tb.v|
-!s101 -O0
-R3
-R4
-n@registers_tb

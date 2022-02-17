@@ -20,7 +20,7 @@ Bus DUT(BusMuxR0In, BusMuxR1In, BusMuxR2In, BusMuxR3In, BusMuxR4In, BusMuxR5In, 
 	 BusMuxHIIn, BusMuxLOIn, BusMuxZhighIn, BusMuxZlowIn, BusMuxPCIn, BusMuxMDRIn, BusMuxPortIn, C_sign_extended,
 	 R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, 
 	 R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out,
-	 HIout, LOout, Zhighout, Zlowout, MuxPCout, MDRout, Portout, Cout, clk); 
+	 HIout, LOout, Zhighout, Zlowout, PCout, MDRout, Portout, Cout, clk, BusMuxOut); 
  
 // add test logic here 
 initial  
@@ -41,7 +41,7 @@ always @(Present_state)  // do the required job in each state
    begin 
       case (Present_state)               // assert the required signals in each clock cycle 
 Default: begin 
-    BusMuxR0In <= 32'h00000000;   BusMuxR1In <= 32'h00000000;	BusMuxR2In <= 32'h00000000;	BusMuxR3In <= 32'h00000000;
+    BusMuxR0In <= 32'h00000000;   BusMuxR1In <= 32'h00001111;	BusMuxR2In <= 32'h11110000;	BusMuxR3In <= 32'h00000000;
     BusMuxR4In <= 32'h00000000;   BusMuxR5In <= 32'h00000000;	BusMuxR6In <= 32'h00000000;	BusMuxR7In <= 32'h00000000;
     BusMuxR8In <= 32'h00000000;   BusMuxR9In <= 32'h00000000;	BusMuxR10In <= 32'h00000000;	BusMuxR11In <= 32'h00000000;
 	 BusMuxR12In <= 32'h00000000;   BusMuxR13In <= 32'h00000000;	BusMuxR14In <= 32'h00000000;	BusMuxR15In <= 32'h00000000;

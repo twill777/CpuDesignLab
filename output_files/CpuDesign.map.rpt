@@ -1,5 +1,5 @@
 Analysis & Elaboration report for CpuDesign
-Wed Feb 16 17:21:06 2022
+Thu Feb 17 15:41:11 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                  ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Wed Feb 16 17:21:06 2022      ;
+; Analysis & Elaboration Status      ; Successful - Thu Feb 17 15:41:11 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; CpuDesign                                  ;
 ; Top-level Entity Name              ; Bus                                        ;
@@ -157,9 +157,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Feb 16 17:21:05 2022
+    Info: Processing started: Thu Feb 17 15:41:10 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CpuDesignLab -c CpuDesign --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file bus.v
+    Info (12023): Found entity 1: Bus
 Info (12021): Found 1 design units, including 1 entities, in source file cpudesign.bdf
     Info (12023): Found entity 1: CpuDesign
 Info (12021): Found 1 design units, including 1 entities, in source file lpm_add_sub0.v
@@ -168,8 +170,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file registe
     Info (12023): Found entity 1: register
 Info (12021): Found 1 design units, including 1 entities, in source file encoder32-5.v
     Info (12023): Found entity 1: encoder32_5
-Info (12021): Found 1 design units, including 1 entities, in source file bus.bdf
-    Info (12023): Found entity 1: Bus
 Info (12021): Found 1 design units, including 1 entities, in source file mux32-1.v
     Info (12023): Found entity 1: mux32_1
 Info (12021): Found 1 design units, including 1 entities, in source file registers.bdf
@@ -180,12 +180,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file datapat
     Info (12023): Found entity 1: Bus_tb
 Info (12021): Found 1 design units, including 1 entities, in source file datapath/datapath.bdf
     Info (12023): Found entity 1: Datapath
+Warning (10236): Verilog HDL Implicit Net warning at Bus_tb.v(23): created implicit net for "PCout"
+Warning (10236): Verilog HDL Implicit Net warning at Bus_tb.v(23): created implicit net for "BusMuxOut"
 Info (12127): Elaborating entity "Bus" for the top level hierarchy
-Info (12128): Elaborating entity "mux32_1" for hierarchy "mux32_1:inst1"
-Info (12128): Elaborating entity "encoder32_5" for hierarchy "encoder32_5:inst"
-Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 1 warning
+Info (12128): Elaborating entity "encoder32_5" for hierarchy "encoder32_5:b2v_inst"
+Info (12128): Elaborating entity "mux32_1" for hierarchy "mux32_1:b2v_inst1"
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4594 megabytes
-    Info: Processing ended: Wed Feb 16 17:21:06 2022
+    Info: Processing ended: Thu Feb 17 15:41:11 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
