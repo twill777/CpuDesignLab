@@ -1,0 +1,135 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 15:26:49  January 27, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CpuDesign_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY ALU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:26:49  JANUARY 27, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Bus_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME Registers_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Registers_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id Registers_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Registers_tb -section_id Registers_tb
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_NAME Bus_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Bus_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id Bus_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Bus_tb -section_id Bus_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Registers_tb.v -section_id Registers_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Datapath/Bus_tb.v -section_id Bus_tb
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VERILOG_FILE ../hello/alu_mux.v
+set_global_assignment -name VERILOG_FILE ../hello/Testbenches/Add_tb.v
+set_global_assignment -name VERILOG_FILE ../tt/register64b.v
+set_global_assignment -name VERILOG_FILE ../tt/alu_mux.v
+set_global_assignment -name VERILOG_FILE ../MDRReg/Registers_tb.v
+set_global_assignment -name BDF_FILE ../MDRReg/Registers.bdf
+set_global_assignment -name VERILOG_FILE ../MDRReg/register64b.v
+set_global_assignment -name VERILOG_FILE ../MDRReg/register.v
+set_global_assignment -name VERILOG_FILE "../MDRReg/mux32-1.v"
+set_global_assignment -name VERILOG_FILE ../MDRReg/MDR.v
+set_global_assignment -name VERILOG_FILE ../MDRReg/MDMux.v
+set_global_assignment -name VHDL_FILE ALU.vhd
+set_global_assignment -name VERILOG_FILE sub_inst.v
+set_global_assignment -name VERILOG_FILE sub_bb.v
+set_global_assignment -name VERILOG_FILE sub.v
+set_global_assignment -name QIP_FILE sub.qip
+set_global_assignment -name SOURCE_FILE sub.cmp
+set_global_assignment -name VERILOG_FILE SHIFT_inst.v
+set_global_assignment -name VERILOG_FILE SHIFT_bb.v
+set_global_assignment -name VERILOG_FILE SHIFT.v
+set_global_assignment -name QIP_FILE SHIFT.qip
+set_global_assignment -name SOURCE_FILE SHIFT.cmp
+set_global_assignment -name VERILOG_FILE ROT_inst.v
+set_global_assignment -name VERILOG_FILE ROT_bb.v
+set_global_assignment -name VERILOG_FILE ROT.v
+set_global_assignment -name QIP_FILE ROT.qip
+set_global_assignment -name SOURCE_FILE ROT.cmp
+set_global_assignment -name VERILOG_FILE mux_bb.v
+set_global_assignment -name VERILOG_FILE mux.v
+set_global_assignment -name QIP_FILE mux.qip
+set_global_assignment -name SOURCE_FILE mux.cmp
+set_global_assignment -name VERILOG_FILE multiplication_inst.v
+set_global_assignment -name VERILOG_FILE multiplication_bb.v
+set_global_assignment -name VERILOG_FILE multiplication.v
+set_global_assignment -name QIP_FILE multiplication.qip
+set_global_assignment -name SOURCE_FILE multiplication.cmp
+set_global_assignment -name VERILOG_FILE MDR.v
+set_global_assignment -name VERILOG_FILE lpm_mux0_bb.v
+set_global_assignment -name VERILOG_FILE lpm_mux0.v
+set_global_assignment -name QIP_FILE lpm_mux0.qip
+set_global_assignment -name SOURCE_FILE lpm_mux0.cmp
+set_global_assignment -name VERILOG_FILE lpm_add_sub0_bb.v
+set_global_assignment -name VERILOG_FILE division_inst.v
+set_global_assignment -name VERILOG_FILE division_bb.v
+set_global_assignment -name VERILOG_FILE division.v
+set_global_assignment -name QIP_FILE division.qip
+set_global_assignment -name SOURCE_FILE division.cmp
+set_global_assignment -name BDF_FILE Bus.bdf
+set_global_assignment -name VHDL_FILE ALU1.vhd
+set_global_assignment -name BDF_FILE ALU.bdf
+set_global_assignment -name VERILOG_FILE add_inst.v
+set_global_assignment -name VERILOG_FILE add_bb.v
+set_global_assignment -name VERILOG_FILE add.v
+set_global_assignment -name QIP_FILE add.qip
+set_global_assignment -name SOURCE_FILE add.cmp
+set_global_assignment -name VERILOG_FILE Bus.v
+set_global_assignment -name BDF_FILE CpuDesign.bdf
+set_global_assignment -name QIP_FILE lpm_add_sub0.qip
+set_global_assignment -name VERILOG_FILE register.v
+set_global_assignment -name VERILOG_FILE "encoder32-5.v"
+set_global_assignment -name VERILOG_FILE "mux32-1.v"
+set_global_assignment -name BDF_FILE Registers.bdf
+set_global_assignment -name VERILOG_FILE Registers_tb.v
+set_global_assignment -name VERILOG_FILE Datapath/Bus_tb.v
+set_global_assignment -name BDF_FILE Datapath/Datapath.bdf
