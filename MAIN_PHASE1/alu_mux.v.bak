@@ -1,0 +1,22 @@
+module mux32_1(
+	input clk,
+	input [63:0] Mux1In, Mux2In,
+	input [31:0] Mux3In, Mux4In, Mux5In, Mux6In, Mux7In, Mux8In,
+	input [2:0] S,
+	output reg[63:0] MuxOut);
+
+always @(posedge clk)
+begin
+	 MuxOut = 0;
+	 case(S)
+		3'b000 : MuxOut = BusMuxR0In;
+		3'b001 : MuxOut = BusMuxR1In;
+		3'b010 : MuxOut[31:0] = BusMuxR2In;
+		3'b011 : MuxOut[31:0] = BusMuxR3In;
+		3'b100 : MuxOut[31:0] = BusMuxR4In;
+		3'b101 : MuxOut[31:0] = BusMuxR5In;
+		3'b110 : MuxOut[31:0] = BusMuxR6In;
+		3'b111 : MuxOut[31:0] = BusMuxR7In;
+	endcase
+end
+endmodule
